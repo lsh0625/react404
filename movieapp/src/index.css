@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Pretendard-Regular";
+	src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+	  format("woff");
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  /* 루트는 자주쓰는 색을 변수로 지정 */
+  :root {
+	--body_backgroud: #101010;
+	--body_color: #fff;
+	--heading_color: #ffe400;
+  }
+  
+  /* 라이트 테마일때 색을 변경 */
+  [data-theme="light"] {
+	--body_backgroud: #fff;
+	--body_color: #000;
+	--heading_color: #000;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  html {
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	background-color: var(--body_backgroud);
+	color: var(--body_color);
+	font-family: "Pretendard-Regular", sans-serif;
+  }
+  
+  .align_center {
+	display: flex;
+	align-items: center;
+  }
